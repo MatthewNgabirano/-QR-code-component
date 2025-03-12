@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+--var--White: hsl(0, 0%, 100%);
+--var--Slate-300: hsl(212, 45%, 89%);
+--var--Slate-500: hsl(216, 15%, 48%);
+--var--Slate-900: hsl(218, 44%, 22%);
+
+font-family: "Work Sans", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+margin: auto;
+display: grid;
+background-color: var(--var--Slate-300);
+}
+
+.parent{
+    margin:15rem auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+}
+.second-child{
+justify-content: center;
+    width: 20rem;
+    background-color: var(--var--White);
+    height: 78vh;
+    z-index: -1;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    border-radius: 0.7rem;
+}
+
+.flex-group{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+margin-top: 20rem;
+padding: 0.3px;
+}
+.first-child{
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 1.5rem;
+    margin-top: -10rem;
+}
+
+.code-img{
+    width: 17rem;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+h3{
+font-family: "Work Sans", sans-serif;  
+font-weight: 800;
+font-size: 1.4rem;
+color: var(--var--Slate-900);
+line-height: 1.2;
+margin-bottom: 2rem;
+}
+
+p{
+    color: var(--var--Slate-500);
+    font-family: "Work Sans", sans-serif;  
+    line-height: 1.1;
+    font-weight: 500;
+}
+
+@media screen and (max-width:600px) {
+.first-child{
+    margin-top: -12rem;
+}
+
+.second-child{
+    height: 85vh;
+}
+}
